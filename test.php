@@ -27,7 +27,7 @@ function testArrAsc($arr) {
     $isSorted = true;
 
     for ($i = 1; $i < count($arr); $i++)
-        $isSorted &= $arr[$i] > $arr[$i - 1];
+        $isSorted &= $arr[$i] >= $arr[$i - 1];
 
     return $isSorted;
 }
